@@ -16,8 +16,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Startup Online Fundraising Landing"
-          description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
+          title="Pundit | Recruitment Bot For Discord"
+          description="Pundit is a Discord Bot made for recruitment teams"
         />
         <Banner />
         <Services />

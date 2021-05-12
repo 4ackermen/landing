@@ -9,27 +9,30 @@ import dotPattern from "assets/images/dot-pattern.png";
 const presetAmounts = [5, 20, 50, 100];
 
 const DonationForm = () => {
-
   return (
     <Box sx={styles.formWrapper}>
       <Heading sx={styles.title}>Pundit</Heading>
       <Text as="span" style={{ fontSize: "2em" }}>
         Discord Bot for Recruiters{" "}
       </Text>
-      <Box as="form" sx={styles.form}>
-        <Box sx={styles.buttonGroup}>
-          <a href="https://discord.gg/gFgsKNq3" target="_blank">
-            <Button variant="primary" sx={styles.submit}>
-              Test it out
-            </Button>
-          </a>
-          <a href="https://discord.new/QgaD6kxABPRW" target="_blank">
-            <Button variant="muted" sx={styles.googlePay}>
-              <Image width="41" height="40" src={googlePay} alt="googlePay" />
-              Fork Recruitment Server Template
-            </Button>
-          </a>
-        </Box>
+      <Box sx={styles.buttonGroup}>
+        {" "}
+        <a href="https://discordapp.com/oauth2/authorize?client_id=787331457583939594&scope=bot&permissions=0" target="_blank" style={{ textDecoration: "none" }}>
+          <Button variant="primary" sx={styles.submit}>
+            Invite Pundit to your server{" "}
+          </Button>{" "}
+        </a>
+        <a href="https://discord.new/QgaD6kxABPRW"  target="_blank" style={{ textDecoration: "none" }}>
+          <Button variant="muted" sx={styles.googlePay}>
+            <Image width="41" height="40" src={googlePay} alt="googlePay" />
+            Fork Recruitment Server Template
+          </Button>
+        </a>
+        <a href="https://discord.gg/gFgsKNq3" target="_blank" style={{ textDecoration: "none" }}>
+          <Button variant="muted" sx={styles.googlePay}>
+           Join the community{" "}
+          </Button>{" "}
+        </a>
       </Box>
     </Box>
   );
@@ -39,7 +42,7 @@ export default DonationForm;
 
 const styles = {
   submit: {
-      marginBottom: '1em',
+    marginBottom: "1em",
   },
   formWrapper: {
     borderRadius: 10,
@@ -171,5 +174,6 @@ const styles = {
       mr: 2,
       maxWidth: [23, 25, null, null, 25, "100%"],
     },
+    mb: "1em",
   },
 };
